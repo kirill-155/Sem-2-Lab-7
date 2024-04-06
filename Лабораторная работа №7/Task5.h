@@ -215,7 +215,9 @@ void move_king(const vector<point>& A)
 		for (int i = 0; i < put.size(); i++)
 		{
 			draw_cell(A[put[i]], put[i] == n ? -1 : put[i], 0, 0, 1);
+			cout << put[i] << " ";
 		}
+		cout << "\n";
 	}
 }
 
@@ -321,7 +323,6 @@ void move_horse(const vector<point>& A)
 void solve5()
 {
 	display();
-
 
 	int n;
 	cin >> n;
